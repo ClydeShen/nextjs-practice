@@ -1,7 +1,15 @@
 'use client';
 
-import { Button, Container, LinearProgress, TextField } from '@mui/material';
+import ClientActionsBlock from '@/components/CodeBlocks/ClientActions';
+import {
+  Button,
+  Container,
+  LinearProgress,
+  Stack,
+  TextField,
+} from '@mui/material';
 import { useEffect, useState } from 'react';
+
 export default function ClientActionPage() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -84,6 +92,11 @@ export default function ClientActionPage() {
           Submit
         </Button>
       </form>
+
+      <Stack>
+        <h2>Code Snippet</h2>
+        <ClientActionsBlock />
+      </Stack>
     </Container>
   );
 }

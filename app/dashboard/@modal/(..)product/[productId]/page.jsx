@@ -24,6 +24,7 @@ export default function DashboardProductPage({ params: { productId } }) {
   useEffect(() => {
     fetchPhoto(productId).then((data) => setPhoto(data));
     setOpen(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   function onDismiss() {
     router.back();

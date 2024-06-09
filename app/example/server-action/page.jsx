@@ -1,5 +1,12 @@
 'use client';
-import { Button, Container, LinearProgress, TextField } from '@mui/material';
+import ServerActionsBlock from '@/components/CodeBlocks/ServerActions';
+import {
+  Button,
+  Container,
+  LinearProgress,
+  Stack,
+  TextField,
+} from '@mui/material';
 import { useActionState, useEffect, useState } from 'react';
 import { onSubmitAction } from './formSubmitAction';
 
@@ -63,6 +70,11 @@ export default function ServerActionPage() {
           </Button>
         </form>
       </div>
+
+      <Stack>
+        <h2>Code Snippet</h2>
+        <ServerActionsBlock />
+      </Stack>
     </Container>
   );
 }

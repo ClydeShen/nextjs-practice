@@ -1,3 +1,4 @@
+import InterceptingRoutesBlock from '@/components/CodeBlocks/InterceptingRoutes';
 import {
   Card,
   CardActions,
@@ -5,14 +6,14 @@ import {
   CardMedia,
   Container,
   Grid,
+  Stack,
   Typography,
 } from '@mui/material';
 import Link from 'next/link';
 import { Fragment } from 'react';
-
 const fetchPhotos = async () => {
   const response = await fetch(
-    'https://jsonplaceholder.typicode.com/photos?_start=0&_limit=6'
+    'https://jsonplaceholder.typicode.com/photos?_start=0&_limit=3'
   );
   const data = await response.json();
   return data;
@@ -48,6 +49,11 @@ export default async function DashboardPage(props) {
           </Fragment>
         ))}
       </Grid>
+
+      <Stack>
+        <h2>Code Snippet</h2>
+        <InterceptingRoutesBlock />
+      </Stack>
     </Container>
   );
 }
