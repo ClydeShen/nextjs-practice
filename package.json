@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-practice",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.19",
+    "next": "15.0.0-canary.11",
+    "next-auth": "beta",
+    "react": "19.0.0-rc-bf3a29d097-20240603",
+    "react-dom": "19.0.0-rc-bf3a29d097-20240603"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5.4.5"
+  }
+}
